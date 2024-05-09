@@ -1,13 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/styles.css" rel="stylesheet">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./css/styles.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/550bd0e722.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>MovieBox</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-DMsans">
+    <!-- CONTAINER  -->
+    <div class="container flex flex-col">
+      <!-- HEADER section -->
+      <section class="w-screen h-screen flex flex-col ralative overflow-hidden">
+        <!-- BACKGROUND IMG  -->
+        <img
+          src="./images/bg.jpeg"
+          alt="background-image"
+          class="f-full w-full object-cover brightness-50"
+        />
+
+        <!-- NAVBAR SECTION  -->
+        <nav
+          class="flex items-center justify-around w-full h-20 absolute top-0"
+        >
+          <!-- LOGO DIV  -->
+          <div class="w-44 h-12 flex items-center space-x-6 cursor-pointer">
+            <!-- LOGO IMG DIV  -->
+            <div class="w-12 h-12">
+              <img src="./images/logo.png" alt="logo" class="w-full h-full" />
+            </div>
+            <a href="#" class="font-bold text-xl text-white">MovieBox</a>
+          </div>
+
+          <!-- SEARCH INPUT  -->
+          <div class="w-200 h-9 flex items-center relative">
+            <input
+              type="text"
+              placeholder="What do you want to watch?"
+              class="w-full border-solid border-2 border-gray rounded-md outline-none bg-transparent py-2.5 px-3 text-white placeholder:text-white placeholder:text-xl placeholder:font-normal"
+            />
+            <span class="absolute top-2 right-5">
+              <i class="fa-solid fa-magnifying-glass text-white"></i>
+            </span>
+          </div>
+
+          <!-- SIGN IN SECTION  -->
+          <div class="w-36 flex items-center justify-between space-x-6">
+            <a href="#" class="w-28 h-6 font-bold text-lg text-white"
+              >Sign in</a
+            >
+
+            <div
+              class="bg-rose flex rounded-full w-9 h-9 p-6 relative cursor-pointer"
+            >
+              <div class="flex">
+                <img
+                  src="./icons/Menu alt 4.svg"
+                  class="absolute top-3 right-3"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <!-- HEADER CONTENT  -->
+        <div
+          class="flex flex-col w-[404px] h-[285px] absolute top-44 left-28 "
+        >
+          <!-- FILM NAME  -->
+          <div class="w-[404px] h-28">
+            <span
+              class="text-white font-bold text-5xl leading-[56px] tracking-widest"
+              >John Wick 3 : Parabellum</span
+            >
+          </div>
+
+          <!-- IMDB and percent -->
+          <div class="flex items-center mt-4 mb-4">
+            <!-- IMDB  -->
+            <div class="w-24 flex items-center justify-between mr-9">
+              <div class="w-9 h-4 object-contain">
+                <img src="./images/imdb.png" class="w-full h-full"/>
+              </div>
+              <span class="w-14  font-normal text-xs text-white">86.0 / 100</span>
+            </div>
+
+            <!-- PERCENT  -->
+            <div class="flex items-center">
+              <div class="w-4 h-4 mr-3 object-cover">
+                <img src="./images/tomato.png" class="w-full h-full">\
+              </div>
+              <span class="font-normal text-xs text-white">97%</span>
+            </div>
+          </div>
+
+          <!-- FILM DESCRIPTION  -->
+          <p class="w-96 mb-4 font-medium text-xl text-white">
+            John Wick is on the run after killing a member of the international assassins' guild, and with a $14 million price tag on his head, he is the target of hit men and women everywhere.
+          </p>
+
+          <!-- WATCH TRAILER BUTTON  -->
+          <button class="w-[169px] h-9 flex gap-[8px] items-center border rounded-md px-3 py-6 bg-rose">
+            <img src="./icons/Play.svg">
+            <a href="#" class="text-white font-bold text-lg">Watch trailer</a>
+          </button>
+          
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
