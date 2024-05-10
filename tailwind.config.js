@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     container: {
-      
+      center : true,
     },
 
     extend: {
@@ -18,7 +18,9 @@ module.exports = {
       colors: {
         'gray': '#9CA3AF',
         'rose': '#BE123C',
-        'footerColor': '#BE123C'
+        'footerColor': '#BE123C',
+        'button' : '#BE123C', 
+        'button-bg' : '#960E2B'
       }
     },
   },
