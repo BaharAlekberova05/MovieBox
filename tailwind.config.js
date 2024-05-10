@@ -2,14 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    container: {
-      center : true,
-    },
-
     extend: {
       fontFamily: {
         DMsans: ["DM Sans", 'sans-serif']
       },
+
+      // container: {
+      //   padding : '0 100px',
+      // },
 
       width: {
         200: '525px'

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/helper.css">
     <script
       src="https://kit.fontawesome.com/550bd0e722.js"
       crossorigin="anonymous"
@@ -17,11 +18,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="font-DMsans">
+  <body class="font-DMsans container overflow-x-hidden">
     <!-- CONTAINER  -->
-    <div class="container flex flex-col">
+    <div class="flex flex-col">
       <!-- HEADER section -->
-      <section class="w-screen h-[600px] flex flex-col ralative overflow-hidden">
+      <section class="container w-screen h-[600px] flex flex-col ralative overflow-hidden mb-16">
         <!-- BACKGROUND IMG  -->
         <img
           src="./images/bg.jpeg"
@@ -118,7 +119,167 @@
         </div>
       </section>
 
-      
+      <!-- FEATURED MOVIE  -->
+      <section>
+        <div class="container-body flex flex-col">
+          <!-- HEADING  -->
+          <div class="heading w-full h-[610px] flex">
+            <span class="heading-name">Featured Movie</span>
+            <a class="heading-link" href="#">See more <i class="fa-solid fa-chevron-right ml-2"></i></a>
+          </div>
+
+          <!-- FEATUED COMPONENTS DIV -->
+          <div class="h-[513px] flex items-center justify-between mb-[170px]">
+            <!-- FEATURED COMPONENTS 1-->
+            <div class="w-[250px] h-[490px] flex flex-col ">
+              <div class="relative mb-3">
+                <img src="./images/fm-1.jpeg" >
+                <img src="./icons/Rating.svg" class="absolute top-4 right-4">
+              </div>
+
+              <div class="flex flex-col">
+                <p class="h-4 font-bold text-sm text-gray mb-3">USA, 2016 - Current</p>
+
+                <p class="h-[23px] font-bold text-black text-lg">Stranger Things</p>
+
+                <!-- IMDB and percent -->
+                <div class="flex items-center mt-4 mb-4">
+                  <!-- IMDB  -->
+                  <div class="w-24 flex items-center justify-between mr-9">
+                    <div class="w-9 h-4 object-contain">
+                      <img src="./images/imdb.png" class="w-full h-full"/>
+                    </div>
+                    <span class="w-14  font-normal text-xs text-black">86.0 / 100</span>
+                  </div>
+
+                  <!-- PERCENT  -->
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 mr-3 object-cover">
+                      <img src="./images/tomato.png" class="w-full h-full">
+                    </div>
+                    <span class="font-normal text-xs text-black">97%</span>
+                  </div>
+                </div>
+
+                <p class="h-4 font-bold text-sm text-gray mb-3">Action, Adventure, Horror</p>
+              </div>
+            </div>
+
+
+            <!-- COMPONENTS 2-->
+            <div class="w-[250px] h-[490px] flex flex-col ">
+              <div class="relative mb-3">
+                <img src="./images/fm-2.jpeg" >
+                <img src="./icons/Favorite.svg" class="absolute top-4 right-4">
+              </div>
+
+              <div class="flex flex-col">
+                <p class="h-4 font-bold text-sm text-gray mb-3">USA, 2005</p>
+
+                <p class="h-[23px] font-bold text-black text-lg">Batman Begins</p>
+
+                <!-- IMDB and percent -->
+                <div class="flex items-center mt-4 mb-4">
+                  <!-- IMDB  -->
+                  <div class="w-24 flex items-center justify-between mr-9">
+                    <div class="w-9 h-4 object-contain">
+                      <img src="./images/imdb.png" class="w-full h-full"/>
+                    </div>
+                    <span class="w-14  font-normal text-xs text-black">82.0 / 100</span>
+                  </div>
+
+                  <!-- PERCENT  -->
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 mr-3 object-cover">
+                      <img src="./images/tomato.png" class="w-full h-full">
+                    </div>
+                    <span class="font-normal text-xs text-black">70%</span>
+                  </div>
+                </div>
+
+                <p class="h-4 font-bold text-sm text-gray mb-3">Action, Adventure</p>
+              </div>
+            </div>
+
+
+            <!-- COMPONENTS 3-->
+            <div class="w-[250px] h-[490px] flex flex-col ">
+              <div class="relative mb-3">
+                <img src="./images/fm-3.jpeg" >
+                <img src="./icons/Favorite.svg" class="absolute top-4 right-4">
+              </div>
+
+              <div class="flex flex-col">
+                <p class="h-4 font-bold text-sm text-gray mb-3">USA, 2018</p>
+
+                <p class="font-bold text-black text-lg">Spider-Man : Into The Spider Verse</p>
+
+                <!-- IMDB and percent -->
+                <div class="flex items-center mt-4 mb-4">
+                  <!-- IMDB  -->
+                  <div class="w-24 flex items-center justify-between mr-9">
+                    <div class="w-9 h-4 object-contain">
+                      <img src="./images/imdb.png" class="w-full h-full"/>
+                    </div>
+                    <span class="w-14  font-normal text-xs text-black">84.0 / 100</span>
+                  </div>
+
+                  <!-- PERCENT  -->
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 mr-3 object-cover">
+                      <img src="./images/tomato.png" class="w-full h-full">
+                    </div>
+                    <span class="font-normal text-xs text-black">87%</span>
+                  </div>
+                </div>
+
+                <p class="h-4 font-bold text-sm text-gray mb-3">Animation, Action, Adventure</p>
+              </div>
+            </div>
+
+
+            <!-- COMPONENTS 4-->
+            <div class="w-[250px] h-[490px] flex flex-col ">
+              <div class="relative mb-3">
+                <img src="./images/fm-4.jpeg" >
+                <img src="./icons/Favorite.svg" class="absolute top-4 right-4">
+              </div>
+
+              <div class="flex flex-col">
+                <p class="h-4 font-bold text-sm text-gray mb-3">USA, 2017</p>
+
+                <p class="h-[23px] font-bold text-black text-lg">Dunkirk</p>
+
+                <!-- IMDB and percent -->
+                <div class="flex items-center mt-4 mb-4">
+                  <!-- IMDB  -->
+                  <div class="w-24 flex items-center justify-between mr-9">
+                    <div class="w-9 h-4 object-contain">
+                      <img src="./images/imdb.png" class="w-full h-full"/>
+                    </div>
+                    <span class="w-14  font-normal text-xs text-black">78.0 / 100</span>
+                  </div>
+
+                  <!-- PERCENT  -->
+                  <div class="flex items-center">
+                    <div class="w-4 h-4 mr-3 object-cover">
+                      <img src="./images/tomato.png" class="w-full h-full">
+                    </div>
+                    <span class="font-normal text-xs text-black">94%</span>
+                  </div>
+                </div>
+
+                <p class="h-4 font-bold text-sm text-gray mb-3">Action, Drama, History</p>
+              </div>
+            </div>
+
+            
+          </div>
+        </div>
+        
+        
+
+      </section>
     </div>
   </body>
 </html>
