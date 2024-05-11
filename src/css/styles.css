@@ -616,6 +616,10 @@ video {
   right: 1.25rem;
 }
 
+.right-8 {
+  right: 2rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -634,6 +638,30 @@ video {
 
 .top-44 {
   top: 11rem;
+}
+
+.top-8 {
+  top: 2rem;
+}
+
+.top-\[50\%\] {
+  top: 50%;
+}
+
+.right-\[50\%\] {
+  right: 50%;
+}
+
+.top-\[\] {
+  top: ;
+}
+
+.top-\[97px\] {
+  top: 97px;
+}
+
+.right-\[195px\] {
+  right: 195px;
 }
 
 .mb-16 {
@@ -672,6 +700,38 @@ video {
   margin-top: 1rem;
 }
 
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-\[\] {
+  margin-bottom: ;
+}
+
+.mb-\[50px\] {
+  margin-bottom: 50px;
+}
+
+.mb-\[130px\] {
+  margin-bottom: 130px;
+}
+
+.mb-\[10px\] {
+  margin-bottom: 10px;
+}
+
+.mb-\[100px\] {
+  margin-bottom: 100px;
+}
+
+.mb-\[120px\] {
+  margin-bottom: 120px;
+}
+
+.mb-\[70px\] {
+  margin-bottom: 70px;
+}
+
 .flex {
   display: flex;
 }
@@ -704,8 +764,20 @@ video {
   height: 23px;
 }
 
+.h-\[255px\] {
+  height: 255px;
+}
+
 .h-\[285px\] {
   height: 285px;
+}
+
+.h-\[290px\] {
+  height: 290px;
+}
+
+.h-\[380px\] {
+  height: 380px;
 }
 
 .h-\[490px\] {
@@ -726,6 +798,18 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[20px\] {
+  height: 20px;
+}
+
+.h-\[370px\] {
+  height: 370px;
 }
 
 .w-12 {
@@ -780,12 +864,32 @@ video {
   width: 404px;
 }
 
+.w-\[450px\] {
+  width: 450px;
+}
+
 .w-full {
   width: 100%;
 }
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[60px\] {
+  width: 60px;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[20px\] {
+  width: 20px;
+}
+
+.w-\[1240px\] {
+  width: 1240px;
 }
 
 .cursor-pointer {
@@ -818,8 +922,28 @@ video {
   margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.space-x-0 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0px * var(--tw-space-x-reverse));
+  margin-left: calc(0px * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-x-12 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(3rem * var(--tw-space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
 }
 
 .overflow-x-hidden {
@@ -844,6 +968,10 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-gray {
@@ -921,6 +1049,11 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 .font-bold {
