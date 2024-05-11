@@ -556,6 +556,10 @@ video {
 
 .container {
   width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 0 100px;
+  padding-left: 0 100px;
 }
 
 @media (min-width: 640px) {
@@ -642,6 +646,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-\[150px\] {
+  margin-bottom: 150px;
 }
 
 .mb-\[170px\] {
